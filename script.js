@@ -145,13 +145,15 @@ let starfield = [];
 let distantStars = [];
 let cosmicDust = [];
 let nebulas = [];
+let lastFrameTime = 0;
+const targetFrameMs = 50;
 
 const buildStarfield = () => {
   const width = document.documentElement.clientWidth || window.innerWidth;
   const height = document.documentElement.clientHeight || window.innerHeight;
-  const count = Math.min(520, Math.max(180, Math.floor((width * height) / 3300)));
-  const distantCount = Math.min(760, Math.max(260, Math.floor((width * height) / 2300)));
-  const dustCount = Math.min(58, Math.max(22, Math.floor((width * height) / 33000)));
+  const count = Math.min(320, Math.max(110, Math.floor((width * height) / 5400)));
+  const distantCount = Math.min(460, Math.max(170, Math.floor((width * height) / 3800)));
+  const dustCount = Math.min(34, Math.max(14, Math.floor((width * height) / 56000)));
 
   starfield = Array.from({ length: count }, () => {
     const bright = Math.random() > 0.975;
@@ -411,7 +413,7 @@ const resizeCanvas = () => {
     return;
   }
 
-  const ratio = Math.min(window.devicePixelRatio || 1, 1.5);
+  const ratio = Math.min(window.devicePixelRatio || 1, 1.25);
   const width = document.documentElement.clientWidth || window.innerWidth;
   const height = document.documentElement.clientHeight || window.innerHeight;
 
@@ -439,10 +441,17 @@ const average = (data, from, to) => {
   return end > start ? sum / ((end - start) * 255) : 0;
 };
 
-const drawVisualizer = () => {
+const drawVisualizer = (timestamp = 0) => {
   if (!canvas || !ctx) {
     return;
   }
+
+  if (document.hidden || timestamp - lastFrameTime < targetFrameMs) {
+    requestAnimationFrame(drawVisualizer);
+    return;
+  }
+
+  lastFrameTime = timestamp;
 
   const width = document.documentElement.clientWidth || window.innerWidth;
   const height = document.documentElement.clientHeight || window.innerHeight;
