@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Yandex Music">
+  <rect width="96" height="96" rx="24" fill="#ffcc00"/>
+  <circle cx="48" cy="48" r="29" fill="#1d1d1f"/>
+  <path fill="#ffcc00" d="M40 62V34h7v18.2c0 5.7-2.1 9.8-7 9.8Zm9.7-28H57v28h-7.3V34Z"/>
+  <circle cx="38.5" cy="64" r="6.5" fill="#1d1d1f"/>
+</svg>

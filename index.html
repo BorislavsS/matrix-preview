@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RADO GOST | Contemporary Folk From Novgorod</title>
+    <meta
+      name="description"
+      content="Official website of RADO GOST, a contemporary folk ensemble from Novgorod. Watch the live performance, listen on streaming platforms and book the band."
+    >
+    <meta property="og:title" content="RADO GOST | Contemporary Folk From Novgorod">
+    <meta property="og:description" content="Live video, music links and booking contacts for RADO GOST.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/hero-radogost.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <canvas class="audio-reactor" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="RADO GOST home" data-i18n-attr="aria-label:brand.homeLabel">
+        <span data-i18n="brand.rado">RADO</span>
+        <img class="wordmark-symbol mini" src="assets/radogost-symbol.png" alt="">
+        <span data-i18n="brand.gost">GOST</span>
+      </a>
+      <div class="header-actions">
+        <nav class="nav" aria-label="Main navigation" data-i18n-attr="aria-label:nav.label">
+          <a href="#video" data-i18n="nav.video">Video</a>
+          <a href="#links" data-i18n="nav.music">Music</a>
+          <a href="#contacts" data-i18n="nav.book">Book</a>
+        </nav>
+        <button class="language-toggle" type="button" aria-label="Switch language to Russian" aria-pressed="false" data-i18n-attr="aria-label:language.toggleLabel">
+          <span class="language-option" data-lang-option="en">EN</span>
+          <span class="language-option" data-lang-option="ru">RU</span>
+        </button>
+      </div>
+    </header>
+
+    <aside class="site-rail" aria-label="Site sections" data-i18n-attr="aria-label:rail.label">
+      <a href="#video">
+        <span>01</span>
+        <strong data-i18n="rail.video">Video</strong>
+      </a>
+      <a href="#posters">
+        <span>02</span>
+        <strong data-i18n="rail.dates">Dates</strong>
+      </a>
+      <a href="#links">
+        <span>03</span>
+        <strong data-i18n="rail.music">Music</strong>
+      </a>
+      <a href="#contacts">
+        <span>04</span>
+        <strong data-i18n="rail.contact">Contact</strong>
+      </a>
+    </aside>
+
+    <main id="top">
+      <section class="hero" aria-label="RADO GOST">
+        <div class="hero-logo-wrap">
+          <div class="hero-wordmark" aria-label="RADO GOST" data-i18n-attr="aria-label:brand.name">
+            <span data-i18n="brand.rado">RADO</span>
+            <span class="hero-symbol-mark" aria-hidden="true">
+              <span class="symbol-head"></span>
+              <span class="symbol-body"></span>
+              <span class="symbol-core"></span>
+            </span>
+            <span data-i18n="brand.gost">GOST</span>
+          </div>
+        </div>
+
+        <div class="hero-video" id="video" aria-label="RADO GOST live video" data-i18n-attr="aria-label:video.label">
+          <video class="video-frame" autoplay muted playsinline preload="auto" data-start="15">
+            <source src="assets/radogost-video.mp4" type="video/mp4">
+            <span data-i18n="video.unsupported">Your browser does not support video.</span>
+          </video>
+        </div>
+      </section>
+
+      <section class="poster-section content-section" id="posters" aria-label="RADO GOST concerts and posters" data-i18n-attr="aria-label:posters.label">
+        <div class="section-copy">
+          <p class="section-kicker" data-i18n="posters.kicker">Live dates</p>
+          <h2 data-i18n="posters.title">Concerts and events</h2>
+        </div>
+        <div class="poster-board">
+          <article class="poster-item">
+            <span data-i18n="posters.upcomingKicker">Upcoming</span>
+            <h3 data-i18n="posters.upcomingTitle">New dates are coming</h3>
+            <p data-i18n="posters.upcomingText">Tour cities, venues and official posters will appear here as soon as they are announced.</p>
+          </article>
+          <article class="poster-item">
+            <span data-i18n="posters.bookingKicker">Booking</span>
+            <h3 data-i18n="posters.bookingTitle">Invite RADO GOST</h3>
+            <p data-i18n="posters.bookingText">Concerts, festivals, private gatherings and cultural programs with a strong live presence.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="social-section" id="links" aria-label="RADO GOST music and social links" data-i18n-attr="aria-label:links.label">
+        <div class="section-copy">
+          <p class="section-kicker" data-i18n="links.kicker">Listen anywhere</p>
+          <h2 data-i18n="links.title">Carry the sound further</h2>
+        </div>
+        <div class="social-grid">
+          <a class="social-card instagram-card" href="https://www.instagram.com/rado_gost/" target="_blank" rel="noopener" aria-label="RADO GOST Instagram">
+            <img src="assets/icon-instagram.svg" alt="">
+            <span>Instagram</span>
+          </a>
+          <a class="social-card yandex-card" href="https://music.yandex.ru/artist/25125915?utm_source=webutm_medium=copy_link" target="_blank" rel="noopener" aria-label="RADO GOST Yandex Music">
+            <img src="assets/icon-yandex-music.svg" alt="">
+            <span data-i18n="links.yandex">Yandex Music</span>
+          </a>
+          <a class="social-card vk-card" href="https://vk.com/rgexperience" target="_blank" rel="noopener" aria-label="RADO GOST VK">
+            <img src="assets/icon-vk.svg" alt="">
+            <span>VK</span>
+          </a>
+          <a class="social-card youtube-card" href="https://www.youtube.com/radogostexperience?si=chYR9SR2X9sfcVwf" target="_blank" rel="noopener" aria-label="RADO GOST YouTube Music">
+            <img src="assets/icon-youtube-music.svg" alt="">
+            <span data-i18n="links.youtube">YouTube Music</span>
+          </a>
+          <a class="social-card apple-card" href="https://music.apple.com/us/artist/%D1%80%D0%B0%D0%B4%D0%BE%D0%B3%D0%BE%D1%81%D1%82/1863547333" target="_blank" rel="noopener" aria-label="RADO GOST Apple Music">
+            <img src="assets/icon-apple-music.svg" alt="">
+            <span>Apple Music</span>
+          </a>
+          <a class="social-card spotify-card" href="https://open.spotify.com/artist/0opHJEzSF5ehxGLBiygchb?si=idNRmubARpKzScrV6yM3AQ" target="_blank" rel="noopener" aria-label="RADO GOST Spotify">
+            <img src="assets/icon-spotify.svg" alt="">
+            <span>Spotify</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact-section content-section" id="contacts" aria-label="RADO GOST contacts" data-i18n-attr="aria-label:contacts.label">
+        <div class="section-copy">
+          <p class="section-kicker" data-i18n="contacts.kicker">Contact</p>
+          <h2 data-i18n="contacts.title">Booking and press</h2>
+        </div>
+        <div class="contact-actions">
+          <a href="https://vk.com/rgexperience" target="_blank" rel="noopener">VK</a>
+          <a href="https://www.instagram.com/rado_gost/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.youtube.com/radogostexperience?si=chYR9SR2X9sfcVwf" target="_blank" rel="noopener">YouTube</a>
+        </div>
+      </section>
+    </main>
+
+    <button class="sound-button" type="button" aria-label="Enable site audio" aria-pressed="false" data-sound-state="off">
+      <span class="sound-ring" aria-hidden="true"></span>
+      <span class="sound-icon" aria-hidden="true">
+        <svg class="sound-icon-on" viewBox="0 0 24 24" focusable="false">
+          <path d="M4 9v6h4l5 4V5L8 9H4z"></path>
+          <path d="M16.5 8.5a5 5 0 0 1 0 7"></path>
+          <path d="M19 6a8.5 8.5 0 0 1 0 12"></path>
+        </svg>
+        <svg class="sound-icon-off" viewBox="0 0 24 24" focusable="false">
+          <path d="M4 9v6h4l5 4V5L8 9H4z"></path>
+          <path d="M18 9l4 4"></path>
+          <path d="M22 9l-4 4"></path>
+        </svg>
+      </span>
+      <span class="sound-copy">
+        <span data-i18n="sound.title">Enable sound</span>
+        <small data-i18n="sound.subtitle">Play music</small>
+      </span>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
