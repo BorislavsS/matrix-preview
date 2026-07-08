@@ -149,9 +149,9 @@ let nebulas = [];
 const buildStarfield = () => {
   const width = document.documentElement.clientWidth || window.innerWidth;
   const height = document.documentElement.clientHeight || window.innerHeight;
-  const count = Math.min(1150, Math.max(420, Math.floor((width * height) / 1500)));
-  const distantCount = Math.min(1500, Math.max(520, Math.floor((width * height) / 1100)));
-  const dustCount = Math.min(120, Math.max(46, Math.floor((width * height) / 15000)));
+  const count = Math.min(520, Math.max(180, Math.floor((width * height) / 3300)));
+  const distantCount = Math.min(760, Math.max(260, Math.floor((width * height) / 2300)));
+  const dustCount = Math.min(58, Math.max(22, Math.floor((width * height) / 33000)));
 
   starfield = Array.from({ length: count }, () => {
     const bright = Math.random() > 0.975;
@@ -411,7 +411,7 @@ const resizeCanvas = () => {
     return;
   }
 
-  const ratio = Math.min(window.devicePixelRatio || 1, 2);
+  const ratio = Math.min(window.devicePixelRatio || 1, 1.5);
   const width = document.documentElement.clientWidth || window.innerWidth;
   const height = document.documentElement.clientHeight || window.innerHeight;
 
